@@ -78,7 +78,7 @@ local function Talk()
 		}
 
     	tag.read = function(reader, data) 
-			data.Onetime = reader.read_list(tag.parameter.Onetime)
+			data.Onetime = reader.read_list(tag.parameters.Onetime)
 			data.Talk = reader.read_list(tag.parameters.Talk)
 			data.Wait = reader.read_list(tag.parameters.Wait)
  		end
